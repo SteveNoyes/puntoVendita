@@ -1,7 +1,6 @@
 const productsList = document.querySelector('.products ul');
 const cartList = document.querySelector('.cart ul');
 const total = document.querySelector('.cart p');
-
 // Add product to cart
 productsList.addEventListener('click', (event) => {
 	if (event.target.tagName === 'LI') {
@@ -13,7 +12,6 @@ productsList.addEventListener('click', (event) => {
 		updateTotal(price);
 	}
 });
-
 // Update cart total
 function updateTotal(price) {
 	let currentTotal = parseFloat(total.textContent.replace('$', ''));
